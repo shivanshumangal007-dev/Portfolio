@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import * as THREE from "three";
 import Homenavbar from "../components/Homenavbar";
+import SplitText from "../components/HomeTextAnimation.jsx";
 
 const Home = () => {
 	const vantaRef = useRef(null);
@@ -62,14 +63,37 @@ const Home = () => {
 			}
 		};
 	}, []);
-
+	const handleAnimationComplete = () => {
+		console.log("All letters have animated!");
+	};
 	return (
-		<div ref={vantaRef} className='min-h-screen w-full' id="home">
-			<div className='flex min-h-screen items-start justify-between px-6 py-4 text-white flex-col space-y-6'>
-                <Homenavbar/>
-				<h1 className='text-[13rem] uppercase leading-44 w-full font-[Kanit]'>
-					welcome to <br/>my portfolio
-				</h1>
+		<div ref={vantaRef} className='min-h-screen w-full' id='home'>
+			<div className='flex min-h-screen items-start justify-between px-6 py-4 text-white flex-col'>
+				<Homenavbar />
+				{/* <div className='flex gap-0 flex-col '>
+					<h1 className='text-[13rem] uppercase w-full font-[Kanit] leading-40 bg-amber-700 m-0 p-0'>
+						welcome to
+					</h1>
+					<h1 className='text-[13rem] uppercase w-full font-[Kanit] m-0 p-0 leading-40 bg-amber-900'>
+						my portfolio
+					</h1>
+				</div> */}
+
+				<SplitText
+					text='WELCOME TO MY PORTFOLIO'
+					className='text-[13vw] font-[Kanit] uppercase font-semibold text-start leading-36 w-full'
+					delay={140}
+					duration={3}
+					ease='power3.out'
+					splitType='words'
+					from={{ opacity: 0, y: 40 }}
+					to={{ opacity: 1, y: 0 }}
+					threshold={0.1}
+					rootMargin='-100px'
+					textAlign='left'
+					onLetterAnimationComplete={handleAnimationComplete}
+					showCallback
+				/>
 			</div>
 		</div>
 	);

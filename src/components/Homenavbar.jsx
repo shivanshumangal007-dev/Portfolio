@@ -2,8 +2,8 @@ import React from 'react'
 
 const Homenavbar = () => {
   return (
-		<div className='self-center'>
-			<ul className='flex space-x-4  px-10 py-4 text-xl rounded-full font-[Montserrat] font-medium uppercase'>
+		<div className='self-center navbar'>
+			<ul className='flex space-x-10  px-10 py-4 text-xl font-[Montserrat] font-medium uppercase  rounded-full text-[#ffffffb3]'>
 				<li>
 					<a href='#home'>Home</a>
 				</li>
