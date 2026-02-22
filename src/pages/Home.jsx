@@ -36,7 +36,7 @@ const Home = () => {
 					minWidth: 200,
 					scale: 1,
 					scaleMobile: 1,
-					color: 0xff0421,
+					color: 0xFF9436,
 					color2: 0xdecbb9,
 					backgroundColor: 0x0,
 					size: 2.8,

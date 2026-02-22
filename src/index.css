@@ -14,8 +14,9 @@
     src: url('./fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
     font-style: normal;
 }
-body{
+body, html{
     background-color: black;
+    scroll-behavior: smooth;
 }
 .navbar{
     background-color: rgba(255, 255, 255, 0);
@@ -32,7 +33,7 @@ body{
 }
 
 .navbar ul li a:hover{
-   color: white;
+   color: #FF9436;
 }
 .navbar ul li a:hover::after{
     transform: scaleX(100%);
