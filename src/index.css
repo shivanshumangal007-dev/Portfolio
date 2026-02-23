@@ -1,4 +1,6 @@
 @import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 @font-face{
     font-family: 'Kanit';
     src: url('./fonts/Kanit/Kanit-Semibold.ttf') format('truetype');
@@ -49,4 +51,8 @@ body, html{
     background-color: #ffffffb3;
     transform: scaleX(0%);
     transition: transform 0.3s ease;
+}
+
+.name{
+    font-family: "Permanent Marker", cursive;
 }
