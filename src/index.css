@@ -61,3 +61,7 @@ body, html{
 #skills > *{
     color: white
 }
+
+.technologies > li{
+    @apply text-[0.8rem] text-white/70  uppercase bg-white/20 px-2 py-1 rounded-lg border-2 border-white/50 ;
+}
