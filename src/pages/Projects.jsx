@@ -3,7 +3,7 @@ import projects from "../content.js";
 import ProjectCard from '../components/ProjectCard';
 const Projects = () => {
   return (
-		<div className='min-h-screen w-full flex items-center justify-center px-4 flex-col'>
+		<div className='min-h-screen w-full flex items-center justify-center px-4 flex-col' id='projects'>
 			<p className='text-xl font-[Montserrat] text-white'>PORTFOLIO</p>
 			<h1 className='text-7xl font-bold text-white text-center'>
 				{" "}

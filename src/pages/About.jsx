@@ -183,7 +183,7 @@ const About = () => {
 					ref={mouseHovrDiv}
 				></div>
 				<p className='text-4xl capitalize text-white'>hi, i am</p>
-				<p className='text-white text-6xl name uppercase tracking-wide leading-10 pt-5'>
+				<p className='text-white text-6xl name uppercase tracking-wide leading-10 pt-5 font-[Xirod]'>
 					shivanshu mangal
 				</p>
 				<p className='text-white text-xl mt-6 font-[Montserrat] '>
