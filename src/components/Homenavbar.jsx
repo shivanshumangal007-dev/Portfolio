@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Logo from "./Logo";
+import downloadIcon from "../assets/download-line.svg";
 
 const Homenavbar = () => {
 	const [active, setActive] = useState("home");
@@ -50,7 +51,7 @@ const Homenavbar = () => {
 						Resume{" "}
 						<img
 							className='h-5'
-							src='/src/assets/download-line.svg'
+							src={downloadIcon}
 							alt='Download Resume'
 						/>
 					</a>

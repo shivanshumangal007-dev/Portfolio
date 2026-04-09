@@ -3,33 +3,33 @@
 
 @font-face {
 	font-family: "Kanit";
-	src: url("./fonts/Kanit/Kanit-Semibold.ttf") format("truetype");
+	src: url("/fonts/Kanit/Kanit-Semibold.ttf") format("truetype");
 	font-style: normal;
 }
 @font-face {
 	font-family: "Bpmf";
-	src: url("./fonts/Bpmf_Iansui/BpmfIansui-Regular.ttf") format("truetype");
+	src: url("/fonts/Bpmf_Iansui/BpmfIansui-Regular.ttf") format("truetype");
 	font-style: normal;
 }
 @font-face {
 	font-family: "Montserrat";
-	src: url("./fonts/Montserrat/Montserrat-VariableFont_wght.ttf")
+	src: url("/fonts/Montserrat/Montserrat-VariableFont_wght.ttf")
 		format("truetype");
 	font-style: normal;
 }
 @font-face {
 	font-family: "Xirod";
-	src: url("./fonts/Xirod.ttf") format("truetype");
+	src: url("/fonts/Xirod.ttf") format("truetype");
 	font-style: normal;
 }
 @font-face {
 	font-family: "snellroundhand";
-	src: url("./fonts/SnellRoundhand_Black_Script-s.p.0sde~ggdkr1m8.otf") format("truetype");
+	src: url("/fonts/SnellRoundhand_Black_Script-s.p.0sde~ggdkr1m8.otf") format("truetype");
 	font-style: normal;
 }
 @font-face {
 	font-family: "geo";
-	src: url("./fonts/geo-Regular.ttf") format("truetype");
+	src: url("/fonts/Geo-Regular.ttf") format("truetype");
 	font-style: normal;
 }
 
