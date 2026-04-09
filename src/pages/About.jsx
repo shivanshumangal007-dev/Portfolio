@@ -1,13 +1,15 @@
-import Masonry from "../components/about_img_animation.jsx";
+// import Masonry from "../components/about_img_animation.jsx";
 import img1 from "../assets/1.jpeg";
 import img4 from "../assets/4.jpeg";
 import img8 from "../assets/8.jpg";
-import img9 from "../assets/9.jpg";
 import img12 from "../assets/12.jpeg";
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+import { reference } from "three/tsl";
+import ThreeDCardCarousel from "../components/ThreeDCardCarousel";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
@@ -35,12 +37,6 @@ const items = [
 		img: img4,
 		url: "#",
 		height: 1230,
-	},
-	{
-		id: "5",
-		img: img9,
-		url: "#",
-		height: 700,
 	},
 ];
 
@@ -81,14 +77,14 @@ const About = () => {
 			const AbtTl = gsap.timeline({
 				scrollTrigger: {
 					trigger: aboutSection.current,
-					start: "top 20%",
+					start: "top 80%",
 				},
 			});
 
 			AbtTl.from(aboutcontent.current, {
 				yPercent: 0,
 				opacity: 0,
-				duration: 2,
+				duration: 1,
 				ease: "power3.out",
 			})
 				.from(
@@ -128,8 +124,8 @@ const About = () => {
 	const handleMouseMove = (e) => {
 		if (!aboutcontent.current || !mouseHovrDiv.current) return;
 		const rect = aboutcontent.current.getBoundingClientRect();
-		const x = e.clientX - rect.left - 90;
-		const y = e.clientY - rect.top - 120;
+		const x = e.clientX - rect.left - 10;
+		const y = e.clientY - rect.top - 370;
 		moveX.current?.(x);
 		moveY.current?.(y);
 	};
@@ -157,33 +153,23 @@ const About = () => {
 	return (
 		<div
 			id='about'
-			className='w-full h-screen relative overflow-y-hidden'
+			className='w-full h-screen relative overflow-y-auto flex items-center  justify-between '
 			ref={aboutSection}
+			onMouseEnter={handleMouseEnter}
+			onMouseLeave={handleMouseLeave}
+			onMouseMove={handleMouseMove}
 		>
-			<Masonry
-				items={items}
-				ease='power3.out'
-				duration={1}
-				stagger={0.2}
-				animateFrom='bottom'
-				scaleOnHover
-				hoverScale={0.95}
-				blurToFocus={false}
-				colorShiftOnHover
-			/>
+			{" "}
 			<div
-				className='w-[90vw] h-[90vh] absolute top-1/2 bg-black/40  translate-x-[-50%] left-1/2 translate-y-[-50%] rounded-[20px] border border-[#FF9436] py-30 font-extrabold px-20 flex flex-col'
+				className='w-[10vw] h-[10vw] rounded-full absolute bg-amber-400/40 translate-x-[-50%] translate-y-[-50%] pointer-events-none scale-0 opacity-0 will-change-transform'
+				ref={mouseHovrDiv}
+			></div>
+			<div
+				className='w-[55%] h-full text-white py-30 font-extrabold px-20 flex flex-col'
 				ref={aboutcontent}
-				onMouseEnter={handleMouseEnter}
-				onMouseLeave={handleMouseLeave}
-				onMouseMove={handleMouseMove}
 			>
-				<div
-					className='w-[10vw] h-[10vw] rounded-full absolute bg-amber-400/40 translate-x-[-50%] translate-y-[-50%] pointer-events-none scale-0 opacity-0 will-change-transform'
-					ref={mouseHovrDiv}
-				></div>
 				<p className='text-4xl capitalize text-white'>hi, i am</p>
-				<p className='text-white text-6xl name uppercase tracking-wide leading-10 pt-5 font-[Xirod]'>
+				<p className='text-white text-6xl name uppercase tracking-wide leading-10 pt-5 font-[kanit]'>
 					shivanshu mangal
 				</p>
 				<p className='text-white text-xl mt-6 font-[Montserrat] '>
@@ -218,8 +204,23 @@ const About = () => {
 					</div>
 				</div>
 			</div>
+			<ThreeDCardCarousel cards={items} />
 		</div>
 	);
 };
 
 export default About;
+
+// import React from 'react'
+// import ThreeDCardCarousel from "../components/ThreeDCardCarousel";
+
+// const About = () => {
+//   return (
+// 	<div>
+// 	  <ThreeDCardCarousel cards={items}/>
+// 	</div>
+//   )
+// }
+
+// export default About;
+

@@ -25,7 +25,7 @@ const projects = [
 		description:
 			"A centralized platform for organizing and accessing previous year question papers of the college. It simplifies exam preparation by structuring resources in one place—making it easier to find, practice, and stay ahead.",
 		image: projectPYQSHUB,
-		technologies: ["react", "Gsap", "javascript", "LOCOMOTIVE JS", "DJANGO"]
+		technologies: ["react", "Gsap", "javascript", "LOCOMOTIVE JS", "FASTAPI", "postgreSQL"]
 	},
 	{
 		id: 4,

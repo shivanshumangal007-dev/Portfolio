@@ -3,6 +3,8 @@ import Home from './pages/Home.jsx'
 import About from './pages/About.jsx'
 import Skills from './pages/Skills.jsx'
 import Projects from './pages/Projects.jsx'
+import LetsCreate from './pages/LetsCreate.jsx'
+import Footer from './pages/Footer.jsx'
 const App = () => {
   return (
     // <div>
@@ -13,6 +15,8 @@ const App = () => {
       <About/>
       <Skills/>
       <Projects/>
+      <LetsCreate/>
+      <Footer/>
     </>
   )
 }

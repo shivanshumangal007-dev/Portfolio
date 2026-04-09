@@ -7,7 +7,7 @@ const Homenavbar = () => {
 		<div className='self-center flex items-center justify-between w-full h-16 px-18 py-4 text-xl font-[Montserrat] font-medium text-[#ffffffb3] navbar'>
 			<Logo />
 			<div className='flex gap-2'>
-				<ul className='flex space-x-10 text-[0.9vw] font-[Montserrat] font-[300] capitalize border border-white/20 rounded-full text-[#ffffffb3]'>
+				<ul className='flex space-x-10 text-[0.9vw] font-[Montserrat] font-light capitalize border border-white/20 rounded-full text-[#ffffffb3]'>
 					<li>
 						<a
 							href='#home'
@@ -45,13 +45,15 @@ const Homenavbar = () => {
 						</a>
 					</li>
 				</ul>
-				<div className=' resume_btn rounded-full p-1 px-5 font-light text-lg text-white/70 flex items-center gap-2'>
-					Resume{" "}
-					<img
-						className='h-5'
-						src='/src/assets/download-line.svg'
-						alt='Download Resume'
-					/>
+				<div className=' resume_btn rounded-full p-1 px-5 font-light text-lg text-black/70'>
+					<a href='/download' className="flex items-center gap-3">
+						Resume{" "}
+						<img
+							className='h-5'
+							src='/src/assets/download-line.svg'
+							alt='Download Resume'
+						/>
+					</a>
 				</div>
 			</div>
 		</div>
