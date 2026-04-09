@@ -169,7 +169,7 @@ const About = () => {
 				ref={aboutcontent}
 			>
 				<p className='text-4xl capitalize text-white'>hi, i am</p>
-				<p className='text-white text-6xl name uppercase tracking-wide leading-10 pt-5 font-[kanit]'>
+				<p className='text-white text-7xl name uppercase tracking-widest leading-10 pt-5 font-bold'>
 					shivanshu mangal
 				</p>
 				<p className='text-white text-xl mt-6 font-[Montserrat] '>

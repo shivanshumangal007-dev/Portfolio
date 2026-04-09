@@ -27,6 +27,11 @@
 	src: url("./fonts/SnellRoundhand_Black_Script-s.p.0sde~ggdkr1m8.otf") format("truetype");
 	font-style: normal;
 }
+@font-face {
+	font-family: "geo";
+	src: url("./fonts/geo-Regular.ttf") format("truetype");
+	font-style: normal;
+}
 
 body,
 html {
@@ -81,7 +86,7 @@ html {
 }
 
 .name {
-	font-family: "Kanit", cursive;
+	font-family: "geo";
 	/* font-family: "Montserrat", cursive; */
 	/* font-family: "snellroundhand", cursive; */
 }
