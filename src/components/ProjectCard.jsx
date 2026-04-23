@@ -10,7 +10,7 @@ const ProjectCard = ({Project}) => {
 			<p className='text-lg text-white mt-4 px-6'>
 				{Project.description}
 			</p>
-			<div className='p-1 border-2 border-white/50 rounded-lg my-6 mx-6'>
+			<div className='p-1 border-2 border-white/50 rounded-lg my-6 mx-6 cursor-pointer' onClick={() => window.open(Project.link, "_blank")}>
 				<img
 					src={Project.image}
 					alt=''

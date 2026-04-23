@@ -36,7 +36,7 @@ const Homenavbar = () => {
 							Projects
 						</a>
 					</li>
-					<li>
+					{/* <li>
 						<a
 							href='#contact'
 							className={active === "contact" ? "active" : ""}
@@ -44,10 +44,15 @@ const Homenavbar = () => {
 						>
 							Contact
 						</a>
-					</li>
+					</li> */}
 				</ul>
 				<div className=' resume_btn rounded-full p-1 px-5 font-light text-lg text-black/70'>
-					<a href='/download' className="flex items-center gap-3">
+					<a
+						href='https://drive.google.com/uc?export=download&id=1Fd-6YcsK9lToRIJ23NkaX71qjdljZM7E'
+						className='flex items-center gap-3'
+						download='resume.pdf'
+						rel='noopener noreferrer'
+					>
 						Resume{" "}
 						<img
 							className='h-5'
