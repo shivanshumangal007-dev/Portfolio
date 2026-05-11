@@ -18,7 +18,7 @@ const ProjectCard = ({Project}) => {
 				/>
 			</div>
 			<div classname='flex gap-5'>
-				<ul className='text-lg text-white mt-4 px-6 flex gap-5 technologies'>
+				<ul className='text-lg text-white mt-4 px-6 flex flex-wrap gap-5 technologies'>
                     {
                         Project.technologies.map((tech) => <li>{tech}</li>)
                     }

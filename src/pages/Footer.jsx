@@ -3,8 +3,8 @@ import React from 'react'
 const Footer = () => {
   return (
 		<div className='h-[30vh] flex flex-col gap-2.5 px-10'>
-			<div className='1 flex justify-between'>
-				<div className='left w-[40%]'>
+			<div className='1 lg:flex justify-between'>
+				<div className='left lg:w-[40%] w-full'>
 					<h1 className='text-white font-[xirod] text-[4vw] font-bold tracking-wide'>
 						shivanshu
 					</h1>
@@ -15,7 +15,7 @@ const Footer = () => {
 						pixel has a purpose. Every interaction tells a story.
 					</p>
 				</div>
-				<div className='right py-4 flex gap-20'>
+				<div className='right py-4 md:flex-row flex-col flex justify-center gap-20'>
 					<div>
 						<h1 className='text-white/80 text-[1.5vw] capitalize font-bold tracking-wide'>
 							contact

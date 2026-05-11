@@ -47,10 +47,10 @@ const ThreeDCardCarousel = ({ cards = defaultCards, interval = 1500 }) => {
 				onMouseLeave={() => setIsPaused(false)}
 			>
 				<div
-					className='relative flex w-full items-center justify-center overflow-visible '
+					className='relative md:flex w-full items-center justify-center overflow-visible hidden'
 					style={{ perspective: "1600px" }}
 				>
-					<div className='relative lg:h-[80vh] w-full max-w-80 sm:h-112 sm:max-w-88 md:h-128 md:max-w-md lg:max-w-lg '>
+					<div className='relative lg:h-[80vh] w-full max-w-80 sm:h-112 sm:max-w-88 md:h-128 md:max-w-lg lg:max-w-lg '>
 						{cards.map((card, index) => {
 							const totalCards = cards.length;
 							let relativePosition = index - activeIndex;

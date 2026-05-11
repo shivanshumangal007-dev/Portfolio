@@ -153,7 +153,7 @@ const About = () => {
 	return (
 		<div
 			id='about'
-			className='w-full h-screen relative overflow-y-auto flex items-center  justify-between '
+			className='w-full h-screen relative overflow-y-auto flex flex-col lg:flex-row items-center  justify-between '
 			ref={aboutSection}
 			onMouseEnter={handleMouseEnter}
 			onMouseLeave={handleMouseLeave}
@@ -165,11 +165,11 @@ const About = () => {
 				ref={mouseHovrDiv}
 			></div>
 			<div
-				className='w-[55%] h-full text-white py-30 font-extrabold px-20 flex flex-col'
+				className='lg:w-[55%] w-full h-full text-white py-30 font-extrabold px-20 flex flex-col justify-center md:justify-start'
 				ref={aboutcontent}
 			>
 				<p className='text-4xl capitalize text-white'>hi, i am</p>
-				<p className='text-white text-7xl name uppercase tracking-widest leading-10 pt-5 font-bold'>
+				<p className='text-white text-7xl name uppercase tracking-widest pt-5 font-bold'>
 					shivanshu mangal
 				</p>
 				<p className='text-white text-xl mt-6 font-[Montserrat] '>

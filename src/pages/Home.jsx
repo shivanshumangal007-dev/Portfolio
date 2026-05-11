@@ -130,7 +130,7 @@ const Home = () => {
 				<h1 className='text-white font-[xirod] text-[9vw] font-bold tracking-wide'>
 					shivanshu
 				</h1>
-				<h2 className='text-4xl uppercase font-medium tracking-wide text-white/80'>
+				<h2 className='text-[4vw] uppercase font-medium tracking-wide text-white/80'>
 					I design and build products{" "}
 				</h2>
 			</div>
