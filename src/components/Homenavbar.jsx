@@ -48,7 +48,7 @@ const Homenavbar = () => {
 				</ul>
 				<div className=' resume_btn rounded-full p-1 px-5 font-light lg:text-[1.3vw] text-lg  text-black/70'>
 					<a
-						href='https://drive.google.com/uc?export=download&id=1Fd-6YcsK9lToRIJ23NkaX71qjdljZM7E'
+						href='https://drive.google.com/file/d/1KCH8BOXCRoUx8ml5jPM7IA-z4H1qc6Ak/view?usp=sharing'
 						className='flex items-center gap-3'
 						download='resume.pdf'
 						rel='noopener noreferrer'
