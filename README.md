@@ -36,13 +36,13 @@ I am a B.Tech CSE student and full-stack developer focused on crafting scalable 
 
 ## Tech Stack
 
-| Category | Technologies |
-| --- | --- |
-| Frontend | React, Tailwind CSS, JavaScript, TypeScript |
-| Backend | Node.js, Express, FastAPI |
-| Database | MongoDB, PostgreSQL |
-| ORM / Tools | Prisma, Git, GitHub |
-| Core CS | C++, Data Structures, Problem Solving |
+| Category    | Technologies                                |
+| ----------- | ------------------------------------------- |
+| Frontend    | React, Tailwind CSS, JavaScript, TypeScript |
+| Backend     | Node.js, Express, FastAPI                   |
+| Database    | MongoDB, PostgreSQL                         |
+| ORM / Tools | Prisma, Git, GitHub                         |
+| Core CS     | C++, Data Structures, Problem Solving       |
 
 ---
 
@@ -64,7 +64,6 @@ I am a B.Tech CSE student and full-stack developer focused on crafting scalable 
 - Build end-to-end prototypes from idea to deployment under tight deadlines.
 - Collaborate in cross-functional teams and present technical demos.
 - Continuously improve engineering speed, architecture decisions, and product thinking.
-
 
 ---
 
