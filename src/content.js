@@ -1,7 +1,7 @@
 import projectNORMAL from './assets/project-normal.png'
 import projectRESOLVEIT from "./assets/project-ResolveIt.png";
 import projectPYQSHUB from "./assets/project-PYQhub.png";
-import projectChitGit from "./assets/project-ChitGit.png";
+import projectChitGit from "./assets/project-Chitgit.png";
 import { link } from 'motion/react-client';
 
 const projects = [
