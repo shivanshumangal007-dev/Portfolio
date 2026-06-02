@@ -1,18 +1,18 @@
 import projectNORMAL from './assets/project-normal.png'
 import projectRESOLVEIT from "./assets/project-ResolveIt.png";
 import projectPYQSHUB from "./assets/project-PYQhub.png";
-import projectOBSIDIAN from "./assets/project-TASK-QUEUE.png";
+import projectChitGit from "./assets/project-ChitGit.png";
 import { link } from 'motion/react-client';
 
 const projects = [
 	{
 		id: 1,
-		name: "NORMAL",
+		name: "CHITGIT",
 		description:
-			"NORMAL is a platform that supports mental well-being and emotional healing. It encourages open conversations about mental health and helps people find calm and balance.",
-		image: projectNORMAL,
-		technologies: ["html", "CSS", "javascript", "mongoDB"],
-		link: "https://shivanshumangal007-dev.github.io/NORMAL-redegiened-/",
+			"Developed a production-oriented AI repository analysis platform that transforms GitHub repositories into searchable knowledge bases. Users can upload repositories, ask context-aware questions about the codebase, and receive AI-generated responses powered by vector search, code embeddings, and retrieval-augmented generation (RAG).",
+		image: projectChitGit,
+		technologies: ["React", "FastAPI", "PostgreSQL", "Qdrant", "Redis", "JWT"],
+		link: "https://chit-git.vercel.app/login",
 	},
 	{
 		id: 2,
@@ -41,12 +41,12 @@ const projects = [
 	},
 	{
 		id: 4,
-		name: "OBSIDIAN TASK QUEUE",
+		name: "NORMAL",
 		description:
-			"Built a distributed task queue system that processes background jobs asynchronously using Node.js workers and Redis queues. Includes a monitoring dashboard to create tasks, track execution status, and observe real-time queue statistics.",
-		image: projectOBSIDIAN,
-		technologies: ["Node.js", "Redis", "React", "javascript"],
-		link: "",
+			"NORMAL is a platform that supports mental well-being and emotional healing. It encourages open conversations about mental health and helps people find calm and balance.",
+		image: projectNORMAL,
+		technologies: ["html", "CSS", "javascript", "mongoDB"],
+		link: "https://shivanshumangal007-dev.github.io/NORMAL-redegiened-/",
 	},
 ];
 
