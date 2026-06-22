@@ -43,22 +43,22 @@ const items = [
 const socialLinks = [
 	{
 		name: "LinkedIn",
-		handle: "@shivanshumangal",
-		url: "#",
+		handle: "@Shivanshu Mangal",
+		url: "https://www.linkedin.com/in/shivanshu-mangal-8a601b378/",
 		icon: "ri-linkedin-fill",
 		hoverClass: "hover:bg-[#0A66C2]",
 	},
 	{
 		name: "GitHub",
-		handle: "@shivanshumangal007",
-		url: "#",
+		handle: "@shivanshumangal007-dev",
+		url: "https://github.com/shivanshumangal007-dev",
 		icon: "ri-github-fill",
 		hoverClass: "hover:bg-[#171515]",
 	},
 	{
 		name: "Instagram",
-		handle: "@shivanshumangal007",
-		url: "#",
+		handle: "@shivanshu07__",
+		url: "https://www.instagram.com/shivanshu07__/",
 		icon: "ri-instagram-fill",
 		hoverClass: "hover:bg-[#E4405F]",
 	},
